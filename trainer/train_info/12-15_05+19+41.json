@@ -1,0 +1,1 @@
+{"net_name": "alexnet", "validation_size": 0.2, "num_classes": 64, "learning_rate": 0.0001, "img_size": 224, "batch_size": 8}

@@ -6,7 +6,13 @@ import datasetutils
 from trainutils import train
 from mynet import create_mynet
 from alexnet import create_alexnet
+import sys
 
+#batch_size = 16
+#learning_rate = 1e-4
+
+learning_rate = float(sys.argv[1])
+batch_size = int(sys.argv[2])
 
 net_name = "alexnet"
 
@@ -15,10 +21,6 @@ train_path = './training_data'
 # Prepare input data
 classes = datasetutils.read_classes(train_path)
 num_classes = len(classes)
-
-batch_size = 16
-
-learning_rate = 1e-4
 
 # 20% of the data will automatically be used for validation
 validation_size = 0.2
