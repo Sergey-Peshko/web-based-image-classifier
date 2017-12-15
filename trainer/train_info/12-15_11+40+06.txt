@@ -1,0 +1,1 @@
+Training Epoch --- Training Accuracy --- Validation Accuracy --- Validation Loss
